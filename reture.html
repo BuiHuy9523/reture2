@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reture</title>
+</head>
+<body>
+<script>
+    function Person(weight,height) {
+
+        this.weight = weight;
+        this.height = height;
+        //alert(bmi);
+        var bmi = (this.height/this.weight * this.weight);
+        //alert(bmi);
+        this.bmis = function () {
+
+            if (bmi < 18.5)
+                return "gay";
+            if (bmi < 24)
+                return "binh thuong";
+            if (bmi > 24)
+                return "beo";
+        }}
+    var person = new Person(50,168);
+    console.log(person.bmis());
+</script>
+</body>
+</html>
